@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+	"os"
+	"time"
+)
+
+func main() {
+	for {
+		_, _ = fmt.Fprint(os.Stderr, "This is STD ERR")
+		_, _ = fmt.Fprint(os.Stderr, "This is STD OUT")
+		time.Sleep(5 * time.Second)
+	}
+}
