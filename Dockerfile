@@ -4,4 +4,4 @@ COPY . /root/simple/
 WORKDIR /root/simple
 RUN ["go", "build"]
 
-CMD ["simple"]
+CMD ["/root/simple/simple"]
